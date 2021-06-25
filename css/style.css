@@ -117,6 +117,7 @@ button:focus {
 .title--autor {
   margin-bottom: 45px;
   text-transform: none;
+  width: 421px;
 }
 .title--blue {
   color: #8ABBF8;
@@ -180,7 +181,7 @@ button:focus {
 .subtitle--overline {
   text-decoration: line-through;
   -webkit-text-decoration-color: #252B31;
-          text-decoration-color: #252B31;
+  text-decoration-color: #252B31;
 }
 
 .text {
@@ -276,6 +277,10 @@ button:focus {
   font-family: "Muller";
   border: 1px #252B31 solid;
   background-color: #FF6633;
+}
+.button:hover {
+  background-color: #8ABBF8;
+  transition: 0.2s linear;
 }
 .button::before {
   content: "";
@@ -743,6 +748,7 @@ button:focus {
   border: 1px solid #252B31;
 }
 .buy__inner--item__header {
+  border-radius: 25px 25px 0 0;
   padding: 15px 0;
   width: 100%;
 }
@@ -784,21 +790,28 @@ button:focus {
 }
 
 .silver {
-  background-image: url("../img/buy/silver.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+  background: linear-gradient(180deg, #C9C6C6 0%, #F1F2F6 100%);
 }
 
 .gold {
-  background-image: url("../img/buy/gold.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+  background: linear-gradient(180deg, #BF953F 0%, #FCF6BA 100%);
 }
 
 .platina {
-  background-image: url("../img/buy/platina.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+  background: linear-gradient(180deg, #EDF1F4 0%, #C3CBDC 100%);
+  position: relative;
+}
+.platina::before {
+  content: url("../img/left-star.svg");
+  position: absolute;
+  left: 20px;
+  top: 2px;
+}
+.platina::after {
+  content: url("../img/right-star.svg");
+  position: absolute;
+  right: 20px;
+  top: 2px;
 }
 
 .footer {
@@ -1063,21 +1076,25 @@ button:focus {
   }
 
   .about {
-    padding: 50px 0 0 0;
+    padding: 170px 0 0 0;
   }
   .about__block {
-    display: none;
-  }
-  .about__block--m {
-    background: #C9E1FF;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-between;
   }
   .about__block--item {
-    width: 60%;
-    margin: 30px 0;
+    height: 90px;
+    width: 47%;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+  .about__block--item::before {
+    display: none;
+  }
+  .about__block--item:last-child {
+    margin-bottom: 0;
+    width: 100%;
   }
   .about__block--item:first-of-type {
     margin: 0;
@@ -1085,20 +1102,9 @@ button:focus {
   .about__block--item:last-of-type {
     margin: 0;
   }
-  .about__inner {
-    flex-direction: column;
-    align-items: center;
-  }
-  .about__inner--item {
-    width: 60%;
-    margin-bottom: 30px;
-  }
-  .about__inner--item:last-child {
-    margin-bottom: 0;
-  }
 
   .for {
-    padding: 120px 0 110px 0;
+    padding: 100px 0 110px 0;
   }
 
   .program {
@@ -1161,12 +1167,16 @@ button:focus {
     z-index: -2;
   }
 
+  .about__block--item {
+    height: 100px;
+  }
+
   .results__img {
     height: 140px;
     top: -100px;
   }
   .results__inner {
-    padding: 160px 0 70px 0;
+    padding: 160px 0 100px 0;
   }
   .results__inner--item {
     margin-bottom: 120px;
@@ -1242,6 +1252,9 @@ button:focus {
   .subtitle--results {
     margin-top: 20px;
   }
+  .subtitle--buy {
+    font-size: 21px;
+  }
 
   .text {
     font-size: 16px;
@@ -1285,8 +1298,8 @@ button:focus {
   }
 
   .about__block--item {
-    height: 130px;
-    width: 80%;
+    height: 90px;
+    margin-bottom: 20px;
   }
 
   .button {
@@ -1301,7 +1314,7 @@ button:focus {
   }
 
   .for {
-    padding: 80px 0 100px 0;
+    padding: 80px 0 70px 0;
   }
   .for__block {
     margin-top: 30px;
@@ -1414,6 +1427,27 @@ button:focus {
   }
 }
 @media (max-width: 414px) {
+  .text--about {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .about__block {
+    top: -18%;
+  }
+  .about__block--item {
+    width: 45%;
+    height: 80px;
+    margin-bottom: 15px;
+  }
+  .about__block--item:last-child {
+    width: 96%;
+  }
+
+  .for {
+    padding: 60px 0 70px 0;
+  }
+
   .program {
     padding: 60px 0 70px 0;
   }
