@@ -219,11 +219,6 @@ button:focus {
     &--white {
         color: #ffffff;
     }
-    // &--results {
-    //     display: flex;
-    //     align-items: flex-start;
-        
-    // }
     &--autor {
         margin-bottom: 35px;
         &:last-child {
@@ -232,7 +227,7 @@ button:focus {
     }
     &--bg {
         background-color: #ffffff;
-        padding: 2px 9px;
+        padding: 1px 9px;
         border-radius: 45px;
     }
     &--grey {
@@ -801,7 +796,7 @@ button:focus {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        width: 421px;
+        width: 460px;
         margin-right: auto;
         margin-left: 110px;
     }

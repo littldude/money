@@ -224,7 +224,7 @@ button:focus {
 }
 .text--bg {
   background-color: #ffffff;
-  padding: 2px 9px;
+  padding: 1px 9px;
   border-radius: 45px;
 }
 .text--grey {
@@ -714,7 +714,7 @@ button:focus {
 }
 .autor__inner {
   display: flex;
-  width: 421px;
+  width: 460px;
   margin-right: auto;
   margin-left: 110px;
 }
