@@ -255,6 +255,9 @@ button:focus {
 .underline {
   position: relative;
 }
+.underline--intro {
+  display: inline;
+}
 .underline--intro::before {
   position: absolute;
   content: url("../img/intro/intro-item-w.png");
