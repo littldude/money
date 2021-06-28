@@ -121,8 +121,7 @@ button:focus {
     }
     &--autor {
         margin-bottom: 45px;
-        text-transform: none;
-        width: 421px;
+        width: 490px;
     }
     &--blue {
         color: #8ABBF8;
@@ -269,6 +268,7 @@ button:focus {
         
     }
     &--autor {
+        display: block;
         &::before {
             position: absolute;
             content: url('../img/autor/autor-item.png');
@@ -1231,11 +1231,6 @@ button:focus {
     }
 }
 @media (max-width: 834px) {
-    .title {
-        &--autor {
-            width: 430px;
-        }
-    }
     .subtitle {
         &--results {
             width: auto;
@@ -1472,7 +1467,7 @@ button:focus {
             
         }
         &--autor {
-            width: 240px;
+            width: 285px;
             &::before {
                 position: absolute;
                 content: url('../img/autor/autor-underline-m.png');

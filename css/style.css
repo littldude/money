@@ -116,8 +116,7 @@ button:focus {
 }
 .title--autor {
   margin-bottom: 45px;
-  text-transform: none;
-  width: 421px;
+  width: 490px;
 }
 .title--blue {
   color: #8ABBF8;
@@ -264,6 +263,9 @@ button:focus {
   top: -4px;
   right: -13px;
   z-index: -1;
+}
+.underline--autor {
+  display: block;
 }
 .underline--autor::before {
   position: absolute;
@@ -1045,10 +1047,6 @@ button:focus {
   }
 }
 @media (max-width: 834px) {
-  .title--autor {
-    width: 430px;
-  }
-
   .subtitle--results {
     width: auto;
   }
@@ -1254,7 +1252,7 @@ button:focus {
     z-index: -1;
   }
   .underline--autor {
-    width: 240px;
+    width: 285px;
   }
   .underline--autor::before {
     position: absolute;
