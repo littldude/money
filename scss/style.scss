@@ -1826,8 +1826,9 @@ button:focus {
     }
     .underline {
         &--intro {
+            display: block;
             &::before {
-                top: 20px;
+                top: 0;
                 right: 15px;
             }
         }

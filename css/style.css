@@ -1538,8 +1538,11 @@ button:focus {
     width: 58%;
   }
 
+  .underline--intro {
+    display: block;
+  }
   .underline--intro::before {
-    top: 20px;
+    top: 0;
     right: 15px;
   }
 
