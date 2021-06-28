@@ -1277,6 +1277,9 @@ button:focus {
     padding: 20px 0 80px 0;
   }
 
+  .about {
+    top: -30px;
+  }
   .about__inner {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1311,6 +1314,9 @@ button:focus {
     margin-top: 25px;
   }
 
+  .for {
+    padding: 250px 0 80px 0;
+  }
   .for__block {
     margin-top: 30px;
   }
@@ -1435,7 +1441,7 @@ button:focus {
   }
 
   .for {
-    padding: 170px 0 70px 0;
+    padding: 200px 0 70px 0;
   }
 
   .program {
